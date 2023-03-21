@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 25px;
+  margin-top: auto;
+}
+
+a#github > i, 
+a#linked-in > i{
+  font-size: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+a#github:hover > i, 
+a#linked-in:hover > i{
+  transform: rotate(360deg);
+}
+
+a#github:visited,
+a#thrones-api:visited {
+  color: inherit;
+}
+
+footer .footer-links {
+  display: flex;
+  gap: 30px;
+}
