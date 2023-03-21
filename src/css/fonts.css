@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Game of Thrones";
+  src: url("../fonts/game_of_thrones-webfont.woff") format("woff");
+  src: url("../fonts/game_of_thrones-webfont.woff2") format("woff2");
+}
