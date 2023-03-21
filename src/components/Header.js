@@ -1,9 +1,9 @@
+import Logo from "./utils/Logo";
+
 const Header = () => {
   return (
     <header>
-      <p>
-        Game of Thrones <span> - </span> Characters
-      </p>
+      <Logo />
       <p>Memory Game</p>
     </header>
   );

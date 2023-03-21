@@ -1,27 +1,14 @@
 #app > header {
-  font-family: "Game of Thrones";
-  display:flex;
+  display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  justify-content: center;
   align-items: center;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-}
-
-#app > header span {
-  margin: 0px 10px;
-  padding-bottom: 7px;
 }
 
 #app > header > p {
-  height: min-content;
-  display:flex;
-  align-items: center;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px #0000007d;
 }
 
-#app > header > p:first-child {
-  font-size: 2rem;
+svg {
+  filter: drop-shadow(2px 2px 2px rgba(97, 104, 0, 0.349));
 }
