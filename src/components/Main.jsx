@@ -12,7 +12,13 @@ const Main = () => {
     <main>
       <Score score={score} bestScore={bestScore} />
       <Difficulty difficulty={difficulty} setDifficulty={setDifficulty} />
-      <Game setScore={setScore} setBestScore={setBestScore} />
+      <Game
+        score={score}
+        setScore={setScore}
+        bestScore={bestScore}
+        setBestScore={setBestScore}
+        difficulty={difficulty}
+      />
     </main>
   );
 };
