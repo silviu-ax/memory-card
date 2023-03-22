@@ -16,10 +16,14 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   const [clickedCharacters, setClickedCharacters] = useState([]);
   const [isOver, setIsOver] = useState(false);
 
+  const handleResetClick = () => setIsOver(false);
+
   const handleCardClick = (character) => {
     if (clickedCharacters.includes(character.id)) {
       if (score > bestScore) setBestScore(score);
       setIsOver(true);
+      setClickedCharacters([]);
+      setCharacters(getCharacters(difficultyMap[difficulty]));
     } else {
       setClickedCharacters([...clickedCharacters].concat(character.id));
       setScore(score + 1);
@@ -36,7 +40,7 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   }, [difficulty]);
 
   return isOver ? (
-    <GameOver />
+    <GameOver handleResetClick={handleResetClick} />
   ) : (
     <div className="card-wrapper">
       {characters.map((character) => (
