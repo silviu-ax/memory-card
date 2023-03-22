@@ -8,6 +8,10 @@ footer {
   margin-top: auto;
 }
 
+footer a {
+  color: inherit;
+}
+
 a#github > i, 
 a#linked-in > i{
   font-size: 2rem;
