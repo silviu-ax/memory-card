@@ -1,8 +1,8 @@
-import { characters } from "./characters";
+import characters from "./characters";
 
-const getCharacter = () => {
+const getCharacters = (numberOfChars) => {
   const ids = [];
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < numberOfChars; i += 1) {
     const id = Math.floor(Math.random() * 53);
     if (ids.includes(id)) {
       i -= 1;
@@ -15,4 +15,4 @@ const getCharacter = () => {
   return randomChars;
 };
 
-export { getCharacter };
+export default getCharacters;

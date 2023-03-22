@@ -1,4 +1,4 @@
-export const characters = [
+const characters = [
   {
     id: 0,
     firstName: "Daenerys",
@@ -530,3 +530,5 @@ export const characters = [
     imageUrl: "https://thronesapi.com/assets/images/bronn.jpg",
   },
 ];
+
+export default characters;

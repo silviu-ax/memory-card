@@ -6,6 +6,7 @@
     "extends": [
         "plugin:react/recommended",
         "airbnb",
+        "plugin:react/jsx-runtime",
         "prettier"
     ],
     "overrides": [
@@ -18,5 +19,6 @@
         "react"
     ],
     "rules": {
+        
     }
 }
