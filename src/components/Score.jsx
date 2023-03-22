@@ -5,6 +5,6 @@ const Score = () => {
   const [bestScore, setBestScore] = useState(0);
 
   return <div>Score</div>;
-};
+}
 
 export default Score;
