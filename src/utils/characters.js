@@ -262,10 +262,10 @@ const characters = [
   {
     id: 26,
     firstName: "Viserys",
-    lastName: "Targaryan",
-    fullName: "Viserys Targaryn",
+    lastName: "Targaryen",
+    fullName: "Viserys Targaryen",
     title: "King Viserys III",
-    family: "Targaryan",
+    family: "Targaryen",
     image: "viserys-targaryan.jpg",
     imageUrl: "https://thronesapi.com/assets/images/viserys-targaryan.jpg",
   },
