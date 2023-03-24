@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import getCharacters from "../utils/getCharacters";
-import GameCard from "./GameCard";
+import GameCards from "./GameCards";
 import GameOver from "./GameOver";
+import loadImages from "./utils/loadImages";
 
 const difficultyMap = {
   easy: 4,
@@ -15,8 +16,12 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   );
   const [clickedCharacters, setClickedCharacters] = useState([]);
   const [isOver, setIsOver] = useState(false);
+  const [images, setImages] = useState([]);
 
-  const handleResetClick = () => setIsOver(false);
+  const handleResetClick = () => {
+    setScore(0);
+    setIsOver(false);
+  };
 
   const handleCardClick = (character) => {
     if (clickedCharacters.includes(character.id)) {
@@ -31,6 +36,11 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   };
 
   useEffect(() => {
+    const urls = characters.map((char) => char.imageUrl);
+    loadImages(urls).then((imgs) => setImages(imgs));
+  }, [characters]);
+
+  useEffect(() => {
     setCharacters(getCharacters(difficultyMap[difficulty]));
   }, [clickedCharacters]);
 
@@ -42,14 +52,12 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   return isOver ? (
     <GameOver handleResetClick={handleResetClick} />
   ) : (
-    <div className="card-wrapper">
-      {characters.map((character) => (
-        <GameCard
-          key={character.id}
-          handleCardClick={handleCardClick}
-          character={character}
-        />
-      ))}
+    <div className={`card-grid ${difficulty}`}>
+      <GameCards
+        characters={characters}
+        images={images}
+        handleCardClick={handleCardClick}
+      />
     </div>
   );
 };
