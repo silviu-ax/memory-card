@@ -1,0 +1,118 @@
+#app > main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > .card-grid {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+main > .card-grid.easy {
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(4, min-content);
+}
+
+main > .card-grid.medium {
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(3, min-content);
+}
+
+main > .card-grid.hard {
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(5, min-content);
+}
+
+.grid-item {
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 15px;
+  overflow: hidden;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-item > p {
+  font-size: 20px;
+  width: min-content;
+}
+
+.grid-item > button {
+  height: 225px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.grid-item img {
+  height: 100%;
+  width: auto;
+}
+
+.grid-item > button {
+  border: 0px solid black;
+  padding: 0;
+}
+
+.card-grid.hard button {
+  height: 185px;
+}
+
+@media screen and (max-width: 1500px) {
+  main > .card-grid.easy {
+    grid-template-rows: min-content;
+  }
+
+  main > .card-grid.medium {
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  main > .card-grid.hard {
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  main > .card-grid p {
+    font-size: 18px;
+    width: min-content;
+  }
+
+  .grid-item > button {
+    height: 175px;
+  }
+
+  .card-grid.hard button {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main > .card-grid.easy {
+    grid-template-rows: min-content;
+  }
+
+  main > .card-grid.medium {
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  main > .card-grid.hard {
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  main > .card-grid p {
+    font-size: 16px;
+    width: min-content;
+  }
+
+  .grid-item > button {
+    height: 125px;
+  }
+
+  .card-grid.hard button {
+    height: 100px;
+  }
+}
