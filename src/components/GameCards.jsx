@@ -1,6 +1,8 @@
-const GameCards = ({ characters, handleCardClick, images }) => {
-  console.log(characters, images);
-  return images.length === characters.length ? (
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const GameCards = ({ characters, handleCardClick, images }) =>
+  images.length === characters.length ? (
     characters.map((char, i) => (
       <div
         key={char.id}
@@ -28,8 +30,15 @@ const GameCards = ({ characters, handleCardClick, images }) => {
       </div>
     ))
   ) : (
-    <div>loading</div>
+    <FontAwesomeIcon
+      icon={faSpinner}
+      spinPulse
+      style={{
+        "--fa-primary-color": "#d9d9d9",
+        "--fa-secondary-color": "#d9d9d9",
+        fontSize: "3rem",
+      }}
+    />
   );
-};
 
 export default GameCards;
