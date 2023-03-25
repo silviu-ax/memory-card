@@ -1,8 +1,17 @@
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
+import loadImages from "./utils/loadImages";
 
-const GameCards = ({ characters, handleCardClick, images }) =>
-  images.length === characters.length ? (
+const GameCards = ({ characters, handleCardClick }) => {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const urls = characters.map((char) => char.imageUrl);
+    loadImages(urls).then((imgs) => setImages(imgs));
+  }, [characters]);
+
+  return images.length === characters.length ? (
     characters.map((char, i) => (
       <div
         key={char.id}
@@ -40,5 +49,6 @@ const GameCards = ({ characters, handleCardClick, images }) =>
       }}
     />
   );
+};
 
 export default GameCards;
