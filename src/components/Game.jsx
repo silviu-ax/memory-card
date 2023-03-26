@@ -18,15 +18,28 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getNewChars = () => {
-    const newChars = getCharacters(difficultyMap[difficulty]);
+  const getNewChars = (current) => {
+    const newChars = getCharacters(
+      difficultyMap[difficulty],
+      clickedCharacters,
+      current
+    );
     const newUrls = newChars.map((char) => char.imageUrl);
     return [newChars, newUrls];
   };
 
-  const handleResetClick = () => {
+  const handleReset = () => {
     setScore(0);
     setIsOver(false);
+    setLoading(true);
+    setClickedCharacters([]);
+    setImages([]);
+    const [newChars, newUrls] = getNewChars();
+    loadImages(newUrls).then((imgs) => {
+      setLoading(false);
+      setImages(imgs);
+      setCharacters(newChars);
+    });
   };
 
   const handleCardClick = (character) => {
@@ -36,7 +49,13 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
       setClickedCharacters([]);
       setCharacters(getCharacters(difficultyMap[difficulty]));
     } else {
-      const [newChars, newUrls] = getNewChars();
+      if (clickedCharacters.length === 51) {
+        setIsOver(true);
+        setClickedCharacters([...clickedCharacters].concat(character.id));
+        setScore(score + 1);
+        return;
+      }
+      const [newChars, newUrls] = getNewChars(character.id);
       setLoading(true);
       loadImages(newUrls).then((imgs) => {
         setClickedCharacters([...clickedCharacters].concat(character.id));
@@ -49,18 +68,16 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   };
 
   useEffect(() => {
-    setLoading(true);
-    setImages([]);
-    const [newChars, newUrls] = getNewChars();
-    loadImages(newUrls).then((imgs) => {
-      setScore(0);
-      setLoading(false);
-      setImages(imgs);
-      setCharacters(newChars);
-    });
+    handleReset();
   }, [difficulty]);
 
-  if (isOver) return <GameOver handleResetClick={handleResetClick} />;
+  if (isOver)
+    return (
+      <GameOver
+        handleResetClick={handleReset}
+        win={clickedCharacters.length === 52}
+      />
+    );
   if (loading || difficultyMap[difficulty] !== images.length)
     return <GameLoading />;
   return (
