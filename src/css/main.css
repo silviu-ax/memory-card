@@ -80,8 +80,8 @@ main > .card-grid.easy {
 }
 
 main > .card-grid.medium {
-  grid-template-rows: repeat(2, 250px);
-  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 240px);
+  grid-template-columns: repeat(3, 290px);
 }
 
 main > .card-grid.hard {
@@ -176,5 +176,45 @@ main > .card-grid.hard {
   main > .card-grid.hard {
     grid-template-rows: repeat(3, 150px);
     grid-template-columns: repeat(4, 200px);
+  }
+}
+
+@media screen and (max-height: 750px) {
+  #app > main {
+    padding: 15px 0px;
+    gap: 5px;
+  }
+
+  main > div:first-child {
+    gap: 5px;
+  }
+
+  main #score {
+    font-size: 16px;
+  }
+
+  main > .card-grid.easy {
+    grid-template-rows: 150px;
+    grid-template-columns: repeat(4, 200px);
+  }
+
+  .card-grid.easy .grid-item > p {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  main > .card-grid.medium {
+    grid-template-rows: repeat(2, 125px);
+    grid-template-columns: repeat(3, 125px);
+  }
+
+  .card-grid.medium .grid-item > p {
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  main > .card-grid.hard {
+    grid-template-rows: repeat(2, 125px);
+    grid-template-columns: repeat(5, 175px);
   }
 }

@@ -12,14 +12,14 @@ footer a {
   color: inherit;
 }
 
-a#github > i, 
-a#linked-in > i{
+a#github > i,
+a#linked-in > i {
   font-size: 2rem;
   transition: all 0.4s ease-in-out;
 }
 
-a#github:hover > i, 
-a#linked-in:hover > i{
+a#github:hover > i,
+a#linked-in:hover > i {
   transform: rotate(360deg);
 }
 
@@ -31,4 +31,11 @@ a#thrones-api:visited {
 footer .footer-links {
   display: flex;
   gap: 30px;
+}
+
+@media screen and (max-height: 750px) {
+  footer {
+    padding: 15px 0px;
+    gap: 6px;
+  }
 }

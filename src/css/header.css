@@ -26,3 +26,17 @@
 svg {
   filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
 }
+
+@media screen and (max-height: 750px) {
+  #app > header {
+    padding: 15px 0;
+  }
+
+  svg {
+    height: 50px;
+  }
+
+  #app > header > p {
+    font-size: 1.5rem;
+  }
+}
