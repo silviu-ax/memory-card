@@ -71,16 +71,6 @@ const characters = [
   },
   {
     id: 7,
-    firstName: "Robert",
-    lastName: "Baratheon",
-    fullName: "Robert Baratheon",
-    title: "Lord of the Seven Kingdoms",
-    family: "House Baratheon",
-    image: "robert-baratheon.jpeg",
-    imageUrl: "https://thronesapi.com/assets/images/robert-baratheon.jpeg",
-  },
-  {
-    id: 8,
     firstName: "Jamie",
     lastName: "Lannister",
     fullName: "Jamie Lannister",
@@ -90,7 +80,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/jaime-lannister.jpg",
   },
   {
-    id: 9,
+    id: 8,
     firstName: "Cersei",
     lastName: "Lannister",
     fullName: "Cersei Lannister",
@@ -100,7 +90,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/cersei.jpg",
   },
   {
-    id: 10,
+    id: 9,
     firstName: "Cateyln",
     lastName: "Stark",
     fullName: "Catelyn Stark",
@@ -110,7 +100,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/catelyn-stark.jpg",
   },
   {
-    id: 11,
+    id: 10,
     firstName: "Robb",
     lastName: "Stark",
     fullName: "Rob Stark",
@@ -120,7 +110,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/robb-stark.jpg",
   },
   {
-    id: 12,
+    id: 11,
     firstName: "Theon",
     lastName: "Greyjoy",
     fullName: "Theon Greyjoy",
@@ -130,7 +120,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/theon.jpg",
   },
   {
-    id: 13,
+    id: 12,
     firstName: "Joffrey",
     lastName: "Baratheon",
     fullName: "Joffrey Baratheon",
@@ -140,7 +130,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/joffrey.jpg",
   },
   {
-    id: 14,
+    id: 13,
     firstName: "Tyrion",
     lastName: "Lannister",
     fullName: "Tyrion Lannister",
@@ -150,7 +140,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/tyrion-lannister.jpg",
   },
   {
-    id: 15,
+    id: 14,
     firstName: "Sandor",
     lastName: "Clegane",
     fullName: "The Hound",
@@ -160,7 +150,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/the-hound.jpg",
   },
   {
-    id: 16,
+    id: 15,
     firstName: "Petyr",
     lastName: "Baelish",
     fullName: "Petyr Baelish",
@@ -170,7 +160,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/littlefinger.jpg",
   },
   {
-    id: 17,
+    id: 16,
     firstName: "Davos",
     lastName: "Seaworth",
     fullName: "Davos Seaworth",
@@ -180,7 +170,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/davos-seaworth.png",
   },
   {
-    id: 18,
+    id: 17,
     firstName: "Stannis",
     lastName: "Baratheon",
     fullName: "Stannis Baratheon",
@@ -190,7 +180,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/stannis.jpg",
   },
   {
-    id: 19,
+    id: 18,
     firstName: "Varys",
     lastName: "Unknown",
     fullName: "Varys",
@@ -200,7 +190,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/varys.jpg",
   },
   {
-    id: 20,
+    id: 19,
     firstName: "Khal",
     lastName: "Drogo",
     fullName: "Khal Drogo",
@@ -210,7 +200,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/khal-drogo.jpg",
   },
   {
-    id: 21,
+    id: 20,
     firstName: "Margaery",
     lastName: "Tyrell",
     fullName: "Margaery Tyrell",
@@ -220,7 +210,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/margaery-tyrell.jpg",
   },
   {
-    id: 22,
+    id: 21,
     firstName: "Ygritte",
     lastName: "None",
     fullName: "Ygritte",
@@ -230,7 +220,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/ygritte.jpg",
   },
   {
-    id: 23,
+    id: 22,
     firstName: "Brienne",
     lastName: "Tarth",
     fullName: "Brienne of Tarth",
@@ -240,7 +230,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/brienne-tarth.jpeg",
   },
   {
-    id: 24,
+    id: 23,
     firstName: "Missandei",
     lastName: "None",
     fullName: "Missandei",
@@ -250,7 +240,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/missandei.jpeg",
   },
   {
-    id: 25,
+    id: 24,
     firstName: "Gilly",
     lastName: "None",
     fullName: "Gilly",
@@ -260,7 +250,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/gilly.jpg",
   },
   {
-    id: 26,
+    id: 25,
     firstName: "Viserys",
     lastName: "Targaryen",
     fullName: "Viserys Targaryen",
@@ -270,7 +260,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/viserys-targaryan.jpg",
   },
   {
-    id: 27,
+    id: 26,
     firstName: "Rickon",
     lastName: "Stark",
     fullName: "Rickon Stark",
@@ -280,7 +270,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/rickon.jpg",
   },
   {
-    id: 28,
+    id: 27,
     firstName: "Roose",
     lastName: "Bolton",
     fullName: "Roose Bolton",
@@ -290,7 +280,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/roose-bolton.jpg",
   },
   {
-    id: 29,
+    id: 28,
     firstName: "Daario",
     lastName: "Naharis",
     fullName: "Daario",
@@ -300,7 +290,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/daario.jpg",
   },
   {
-    id: 30,
+    id: 29,
     firstName: "Shae",
     lastName: "",
     fullName: "Shae",
@@ -310,7 +300,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/shae.jpg",
   },
   {
-    id: 31,
+    id: 30,
     firstName: "Tommen",
     lastName: "Baratheon",
     fullName: "Tommen Baratheon",
@@ -320,7 +310,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/tommen.jpg",
   },
   {
-    id: 32,
+    id: 31,
     firstName: "Gendry",
     lastName: "Baratheon",
     fullName: "Gendry Baratheon",
@@ -330,7 +320,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/gendry.jpg",
   },
   {
-    id: 33,
+    id: 32,
     firstName: "Jorah",
     lastName: "Mormont",
     fullName: "Jorah Mormont",
@@ -340,7 +330,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/jorah-mormont.jpg",
   },
   {
-    id: 34,
+    id: 33,
     firstName: "Robert",
     lastName: "Baratheon",
     fullName: "Robert Baratheon",
@@ -350,7 +340,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/king-robert.jpg",
   },
   {
-    id: 35,
+    id: 34,
     firstName: "Ramsey",
     lastName: "Bolton",
     fullName: "Ramsey Bolton",
@@ -360,7 +350,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/ramsey-bolton.jpg",
   },
   {
-    id: 36,
+    id: 35,
     firstName: "Talisa",
     lastName: "Stark",
     fullName: "Talisa Stark",
@@ -370,7 +360,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/talisa-stark.jpg",
   },
   {
-    id: 37,
+    id: 36,
     firstName: "Jeor",
     lastName: "Mormont",
     fullName: "Jeor Mormont",
@@ -380,7 +370,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/lord-commander-mormont.jpg",
   },
   {
-    id: 38,
+    id: 37,
     firstName: "The High",
     lastName: "Sparrow",
     fullName: "The High Sparrow",
@@ -390,7 +380,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/the-high-sparrow.jpg",
   },
   {
-    id: 39,
+    id: 38,
     firstName: "Oberyn",
     lastName: "Martell",
     fullName: "Oberyn Martell",
@@ -400,7 +390,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/red-viper.jpg",
   },
   {
-    id: 40,
+    id: 39,
     firstName: "Melisandre",
     lastName: "The Red Woman",
     fullName: "Melisandre",
@@ -410,7 +400,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/melisandre.jpg",
   },
   {
-    id: 41,
+    id: 40,
     firstName: "Jaqen",
     lastName: "H'ghar",
     fullName: "Jaqen H'ghar",
@@ -420,7 +410,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/jaqen-hghar.jpg",
   },
   {
-    id: 42,
+    id: 41,
     firstName: "Tywin",
     lastName: "Lannister",
     fullName: "Tywin Lannister",
@@ -430,7 +420,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/tywin-lannister.jpg",
   },
   {
-    id: 43,
+    id: 42,
     firstName: "Ellaria",
     lastName: "Sand",
     fullName: "Ellaria Sand",
@@ -440,7 +430,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/ellaria-sand.jpg",
   },
   {
-    id: 44,
+    id: 43,
     firstName: "Tormund",
     lastName: "Giantsbane",
     fullName: "Tormund Giantsbane",
@@ -450,7 +440,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/tormund-giantsbane.jpg",
   },
   {
-    id: 45,
+    id: 44,
     firstName: "Yara",
     lastName: "Greyjoy",
     fullName: "Yara Greyjoy",
@@ -460,7 +450,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/yara-greyjoy.jpg",
   },
   {
-    id: 46,
+    id: 45,
     firstName: "Euron",
     lastName: "Greyjoy",
     fullName: "Euron Greyjoy",
@@ -470,7 +460,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/euron-greyjoy.jpg",
   },
   {
-    id: 47,
+    id: 46,
     firstName: "Wylis",
     lastName: "Hodor",
     fullName: "Hodor",
@@ -480,7 +470,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/hodor.jpg",
   },
   {
-    id: 48,
+    id: 47,
     firstName: "",
     lastName: "Pycelle",
     fullName: "Pycelle",
@@ -490,7 +480,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/pycelle.jpg",
   },
   {
-    id: 49,
+    id: 48,
     firstName: "Grey",
     lastName: "Worm",
     fullName: "Grey Worm",
@@ -500,7 +490,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/greyworm.jpg",
   },
   {
-    id: 50,
+    id: 49,
     firstName: "Olenna",
     lastName: "Tyrell",
     fullName: "Olenna Tyrell",
@@ -510,7 +500,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/olenna-tyrell.jpg",
   },
   {
-    id: 51,
+    id: 50,
     firstName: "Qyburn",
     lastName: "Grand Maester",
     fullName: "Qyburn",
@@ -520,7 +510,7 @@ const characters = [
     imageUrl: "https://thronesapi.com/assets/images/qyburn.jpg",
   },
   {
-    id: 52,
+    id: 51,
     firstName: "Lord",
     lastName: "Bronn",
     fullName: "Lord Bronn",
