@@ -12,19 +12,23 @@ const Difficulty = ({ difficulty, setDifficulty }) => {
   return selecting ? (
     // disabled linter rules because event is only for catching bubbled events
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions
-    <div onClick={handleClick}>
-      <button type="button" value="easy">
+    <div className="dif-btn-wrapper" onClick={handleClick}>
+      <button className="difficulty" type="button" value="easy">
         Easy
       </button>
-      <button type="button" value="medium">
+      <button className="difficulty" type="button" value="medium">
         Medium
       </button>
-      <button type="button" value="hard">
+      <button className="difficulty" type="button" value="hard">
         Hard
       </button>
     </div>
   ) : (
-    <button type="button" onClick={() => setSelecting(!selecting)}>
+    <button
+      className="difficulty"
+      type="button"
+      onClick={() => setSelecting(!selecting)}
+    >
       Difficulty: {difficulty.toUpperCase()}
     </button>
   );

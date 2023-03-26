@@ -1,8 +1,8 @@
 const GameOver = ({ handleResetClick, win }) => (
-  <div>
-    <p>Game over. {win ? "You won" : "You lost"}</p>
-    <button type="button" onClick={handleResetClick}>
-      restart
+  <div className="game-over">
+    <p>Game over. {win ? "You won." : "You lost."}</p>
+    <button id="restart" type="button" onClick={handleResetClick}>
+      Restart
     </button>
   </div>
 );

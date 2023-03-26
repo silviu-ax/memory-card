@@ -12,7 +12,7 @@
   content: "";
   height: 5px;
   width: 100%;
-  background-color: var(--text-color);
+  background-color: var(--text-color-light);
   box-shadow: var(--text-shadow);
   bottom: 0;
   left: 0;

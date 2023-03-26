@@ -10,8 +10,11 @@ const Main = () => {
 
   return (
     <main>
-      <Score score={score} bestScore={bestScore} />
-      <Difficulty difficulty={difficulty} setDifficulty={setDifficulty} />
+      <div>
+        <Score score={score} bestScore={bestScore} />
+        <Difficulty difficulty={difficulty} setDifficulty={setDifficulty} />
+      </div>
+
       <Game
         score={score}
         setScore={setScore}
