@@ -9,7 +9,7 @@ const loadImages = (urls) => {
         img.src = url;
       })
   );
-  return Promise.all(promises).then((imgs) => imgs);
+  return Promise.all(promises);
 };
 
 export default loadImages;

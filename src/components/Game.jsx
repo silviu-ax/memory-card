@@ -37,6 +37,7 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
       setCharacters(getCharacters(difficultyMap[difficulty]));
     } else {
       const [newChars, newUrls] = getNewChars();
+      setLoading(true);
       loadImages(newUrls).then((imgs) => {
         setClickedCharacters([...clickedCharacters].concat(character.id));
         setCharacters(newChars);
@@ -49,6 +50,7 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
 
   useEffect(() => {
     setLoading(true);
+    setImages([]);
     const [newChars, newUrls] = getNewChars();
     loadImages(newUrls).then((imgs) => {
       setScore(0);
@@ -59,7 +61,8 @@ const Game = ({ difficulty, score, setScore, bestScore, setBestScore }) => {
   }, [difficulty]);
 
   if (isOver) return <GameOver handleResetClick={handleResetClick} />;
-  if (loading) return <GameLoading />;
+  if (loading || difficultyMap[difficulty] !== images.length)
+    return <GameLoading />;
   return (
     <div className={`card-grid ${difficulty}`}>
       <GameCards
