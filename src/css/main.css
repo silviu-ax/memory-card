@@ -91,6 +91,7 @@ main > .card-grid.hard {
 
 .grid-item {
   position: relative;
+  cursor: pointer;
   box-shadow: 1px 1px 5px black;
   border-radius: 15px;
   overflow: hidden;
@@ -104,6 +105,21 @@ main > .card-grid.hard {
   -khtml-user-select: none;
   -webkit-user-select: none;
   -o-user-select: none;
+}
+
+.grid-item::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #00000082, transparent);
+  transition: all 0.2s ease-in-out;
+}
+
+.grid-item.hovering::after {
+  top: 0;
 }
 
 .grid-item > p {

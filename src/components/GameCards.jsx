@@ -5,6 +5,12 @@ const GameCards = ({ characters, handleCardClick, images }) =>
       className="grid-item"
       role="button"
       tabIndex="0"
+      onMouseEnter={(e) => {
+        e.currentTarget.classList.add("hovering");
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.classList.remove("hovering");
+      }}
       onClick={() => handleCardClick(char)}
       onKeyUp={(e) => {
         if (e.key !== "Enter") return;
@@ -24,5 +30,4 @@ const GameCards = ({ characters, handleCardClick, images }) =>
       <p>{char.fullName}</p>
     </div>
   ));
-
 export default GameCards;
