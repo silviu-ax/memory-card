@@ -13,12 +13,6 @@
   --text-shadow: 2px 2px 2px #0000007d;
 }
 
-@font-face {
-  font-family: "Game of Thrones";
-  src: url("fonts/game_of_thrones-webfont.woff") format("woff");
-  src: url("fonts/game_of_thrones-webfont.woff2") format("woff2");
-}
-
 #app {
   height: 100vh;
   display: flex;
