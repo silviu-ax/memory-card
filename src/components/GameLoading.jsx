@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const GameLoading = () => (
   <FontAwesomeIcon
     icon={faSpinner}
-    spinPulse
+    spin
     style={{
-      "--fa-primary-color": "#d9d9d9",
-      "--fa-secondary-color": "#d9d9d9",
-      fontSize: "3rem",
+      fontSize: "4rem",
+      marginTop: "2rem",
+      "--fa-primary-color": "#e0e0e0",
+      "--fa-secondary-color": "#878787",
     }}
   />
 );
