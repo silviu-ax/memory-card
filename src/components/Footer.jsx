@@ -22,7 +22,7 @@ const Footer = () => (
       </a>
       <a
         id="github"
-        href="https://github.com/alleizon/memory-card"
+        href="https://github.com/silviu-ax/memory-card"
         target="_blank"
         rel="noreferrer"
       >
